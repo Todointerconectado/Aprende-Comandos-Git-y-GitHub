@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio con Git</title>
     <link rel="stylesheet" href="./css/style.css" type="text/css">
-    <link rel="icon" href="./css/logo2.png">
+    <link rel="icon" href="./css/img/1_logo.png">
     <script src="/2_Proyecto web empresa A/js/JavaScrip.js"></script>
 </head>
 <body>
@@ -17,7 +17,7 @@
                 <p>Bot&oacute;n de acceso a la p&aacute;gina oficial de Git para ver los comandos:</p>
                 <a href="https://git-scm.com/docs/git#_git_commands" target="_black">
                     <figure class="contenedor_comando">
-                        <img class="comandos" src="/css/Comandos_Git.png" alt="Comandos de Git">
+                        <img class="comandos" src="./css/img/2_Comandos_Git.png" alt="Comandos de Git">
                     </figure>
                 </a>
             </div>
@@ -138,6 +138,12 @@
                                     </li>
                                     <li>
                                         <details>
+                                            <summary> git branch -d (y el nombre de la rama)</summary>
+                                            <p> <dfn> Borrar rama. </dfn> </p>
+                                        </details>
+                                    </li>
+                                    <li>
+                                        <details>
                                             <summary> git branch</summary>
                                             <p> <dfn> Podemos ver las ramas existentes. Nos encontramos en la rama con el * </dfn> </p>
                                         </details>
@@ -145,8 +151,7 @@
                                     <li>
                                         <details>
                                             <summary> git checkout (y el nombre de la rama)</summary>
-                                            <p> <dfn> Me muevo entre las ramas. </dfn> </p>
-                                            <p>Creo un botón desde otro rama:</p>
+                                            <p> <dfn> Me muevo entre las ramas. Y creo un botón desde una rama secundaria: </dfn> </p>
                                             <input type="button" onclick="saludo()" value="Dale ya!">
                                             <p>Guardo el desarrollo en la rama pertinente con Git</p>
                                         </details>
@@ -155,6 +160,9 @@
                                         <details>
                                             <summary> git merge (y el nombre de la rama que se quiere fucionar) </summary>
                                             <p> <dfn> Hacer un merge (Enlasar las ramas creadas en un solo archivo.) Se hace desde la rama master (main) </dfn> </p>
+                                            <figure class="contenedor__img">
+                                                <img class="img__proceso" src="/css/img/3_git_merge_nombreDeLaRama.png" alt="Proceso de git merge">
+                                            </figure>
                                         </details>
                                     </li>
                                 </ul>
