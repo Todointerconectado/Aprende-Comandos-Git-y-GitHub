@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+main {
+    width: 95%;
+    background-color: white;
+    margin: 10px auto;
+    padding: 20px 0px;
+    border: 2px solid rgb(100, 97, 97);
+    box-shadow: 5px 5px 15px rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+h1 {
+    background: #1e249a;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(100, 97, 97);
+    box-shadow: 1px 2px 5px rgb(0, 0, 0, 1);
+    text-align: center;
+}
+/* Boton de comandos Git */
+.contenedor_seccion_comando {
+    text-align: center;
+    margin: 10px 0px;
+    padding: 5px;
+    border: 1px 1px 10px 1px solid rgb(100, 97, 97);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+.padre {
+    display: table;
+}
+.contenedor_seccion_comando p, a {
+    display: table-cell;
+    vertical-align: middle;
+}
+.contenedor_comando {
+    width: 150px;
+}
+.comandos {
+    height: 70px;
+    display: block;
+    margin: auto;
+}
+
+/* Contenedor de los títulos principales de la lista de comandos */
+summary {
+    background-color: aqua;
+    padding: 5px;
+    margin: 3px;
+    border: 1px solid #1e249a;
+    box-shadow: 1px 1px 3px #000;
+}

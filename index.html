@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio con Git</title>
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link rel="icon" href="./css/logo2.png">
+    <script src="/2_Proyecto web empresa A/js/JavaScrip.js"></script>
+</head>
+<body>
+    <main>
+        <h1>Bienvenidos al curso <abbr title="software de control de versiones">Git</abbr> </h1>
+        <div class="contenedor_seccion_comando">
+            <div class="padre">
+                <p>Bot&oacute;n de acceso a la p&aacute;gina oficial de Git para ver los comandos:</p>
+                <a href="https://git-scm.com/docs/git#_git_commands" target="_black">
+                    <figure class="contenedor_comando">
+                        <img class="comandos" src="/css/Comandos_Git.png" alt="Comandos de Git">
+                    </figure>
+                </a>
+            </div>
+        </div>
+
+        <ol>
+            <li> En este caso estamos trabajando con los comandos de Git:
+                <ul>
+                    <li>
+                        <details> 
+                            <summary>git add nombre del archivo</summary>
+                            <p> <dfn>Sirve para guardar un archivo en el repositorio de Git.</dfn> </p>
+                        </details>
+                    </li>
+                    <li>
+                        <details> 
+                            <summary>git add .</summary>
+                            <p> <dfn> para guardar todos los archivos en el repositorio de Git </dfn> </p>
+                        </details>
+                    </li>
+                    <li>
+                        <details> 
+                            <summary>git status -s</summary>
+                            <p> <dfn> Muestra los archivos con copia de guardado y los que no. </dfn> </p>
+                        </details>
+                    </li>
+                    <li>
+                        <details> 
+                            <summary>git commit -m "descripción"</summary>
+                            <p> <dfn> Crea una copia de guardado. </dfn> </p>
+                        </details>
+                    </li>
+                    <li>
+                        <details> 
+                            <summary>git log --oneline</summary>
+                            <p> <dfn> Muestra los archivos guardados en Git. </dfn> </p>
+                        </details>
+                    </li>
+                    <li>
+                        <details> 
+                            <summary>git reset --hard código guardado</summary>
+                            <p> <dfn> vuelbe al punto que se guardo en el codigo seleccionado. </dfn> </p>
+                        </details>
+                    </li>
+                    <li>
+                        <details> 
+                            <summary>git commit -am "descripción"</summary>
+                            <ul>
+                                <li>Dos comandos en uno:</li>
+                                <li>Comando commit</li>
+                                <li>Comando add</li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details> 
+                            <summary>clear:</summary>
+                            <p> <dfn> Para limpiar la consolo de Git </dfn> </p>
+                        </details>
+                    </li>
+                    <li>
+                        <details> 
+                            <summary>push:</summary>
+                            <p> <dfn> Para cargar del editor al GitHub. </dfn> </p>
+                        </details>
+                    </li>
+                    <li>
+                        <details> 
+                            <summary>pull:</summary>
+                            <p> <dfn> Para traer de GitHub al editor local. </dfn> </p>
+                        </details>
+                    </li>
+                    <li>
+                        <details> 
+                            <summary>tags:</summary>
+                            <p> <dfn> Nos permiten verificar versiones de nuestro proyecto. </dfn> </p>
+                            <ul>
+                                <li>
+                                    <details>
+                                        <summary>Para esto tenemos dos pasos:</summary>
+                                        <ol>
+                                            <li>
+                                                <summary>git tag nombre identificatibo -m "descripción"</summary>
+                                                <p> <dfn> Este paso toma nota en Git </dfn> </p> 
+                                            </li>
+                                            <li>
+                                                <summary>git push --tags</summary>
+                                                <p> <dfn> Guardamos los tags en GitHub. </dfn> </p>
+                                            </li>
+                                        </ol>
+                                    </details>
+                                </li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary> Ramas o Brach </summary>
+                            <p> <dfn> Rama es una linea de tiempo del proyecto en Git. Se pueden crear varias ramas. </dfn> </p>
+                                <ul>
+                                    <li>
+                                        <details>
+                                            <summary> git branch (y el nombre de la rama)</summary>
+                                            <p> <dfn> Crear una rama. </dfn> </p>
+                                        </details>
+                                    </li>
+                                    <li>
+                                        <details>
+                                            <summary> git branch</summary>
+                                            <p> <dfn> Podemos ver las ramas existentes. Nos encontramos en la rama con el * </dfn> </p>
+                                        </details>
+                                    </li>
+                                    <li>
+                                        <details>
+                                            <summary> git checkout (y el nombre de la rama)</summary>
+                                            <p> <dfn> Me muevo entre las ramas. </dfn> </p>
+                                            <p>Creo un botón desde otro rama:</p>
+                                            <input type="button" onclick="saludo()" value="Dale ya!">
+                                            <p>Guardo el desarrollo en la rama pertinente con Git</p>
+                                        </details>
+                                    </li>
+                                    <li>
+                                        <details>
+                                            <summary> git merge (y el nombre de la rama que se quiere fucionar) </summary>
+                                            <p> <dfn> Hacer un merge (Enlasar las ramas creadas en un solo archivo.) Se hace desde la rama master (main) </dfn> </p>
+                                        </details>
+                                    </li> 
+                                </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary> git remote set-url origin (pegamos la url del repositorio) </summary>
+                            <p> <dfn> Guardamos el proyecto en el repositorio que queremos. </dfn> </p>
+                        </details>
+                    </li>
+                </ul>
+            </li>
+            <li> En este caso estamos trabajando con los comandos de GitHub:</li>
+        </ol><br>
+        <p>Párrafo agregado desde GitHub.</p>
+    </main>
+</body>
+</html>
