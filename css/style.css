@@ -3,15 +3,23 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #399c42;
     font-weight: bold;
     font-size: 18px;
 }
 
+/*  */
+.fondo__video {
+    width: 100%;
+    position: fixed;
+    min-width: 100%;
+    transform: tr translateX(-50%) translateY(-50);
+    z-index: -1;
+}
+
 main {
-    width: 95%;
-    background-color: white;
-    margin: 10px auto;
+    width: 68%;
+    background-color: rgba(255, 255, 255, .5);
+    margin: 10px;
     padding: 20px 0px;
     border: 2px solid rgb(100, 97, 97);
     box-shadow: 5px 5px 15px rgb(0, 0, 0);
@@ -28,6 +36,7 @@ h1 {
 }
 /* Boton de comandos Git */
 .contenedor_seccion_comando {
+    background-color: #ffffff;
     text-align: center;
     margin: 10px 0px;
     padding: 5px;
@@ -59,16 +68,15 @@ details {
     box-shadow: 1px 1px 5px rgba(0,0,0,1);
 }
 summary {
-    background-color: aqua;
+    background-color: #1d6386;
+    color: #ffffff;
     padding: 5px;
     border: 1px solid #1e249a;
     border-radius: 5px;
 }
-
 p {
     padding: 10px 50px;
 }
-
 
 /* Proceso de los comandos en img */
 .contenedor__img {
