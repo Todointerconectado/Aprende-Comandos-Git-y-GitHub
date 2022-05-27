@@ -7,7 +7,7 @@ body {
     font-size: 18px;
 }
 
-/*  */
+/* Fondo con movimiento */
 .fondo__video {
     width: 100%;
     position: fixed;
@@ -16,22 +16,22 @@ body {
     z-index: -1;
 }
 
+/*  */
 main {
     width: 68%;
     background-color: rgba(255, 255, 255, .5);
     margin: 10px;
-    padding: 20px 0px;
-    border: 2px solid rgb(100, 97, 97);
-    box-shadow: 5px 5px 15px rgb(0, 0, 0);
+    padding: 0px 0px 20px 0px;
+    border: 1px solid rgb(100, 97, 97);
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
     border-radius: 5px;
 }
 
 h1 {
-    background: #1e249a;
+    background: #1a1e74;
     width: 100%;
     color: rgb(255, 255, 255);
-    border: 1px solid rgb(100, 97, 97);
-    box-shadow: 1px 2px 5px rgb(0, 0, 0, 1);
+    box-shadow: 1px 2px 5px rgb(0, 0, 0, .2);
     text-align: center;
 }
 /* Boton de comandos Git */
@@ -40,8 +40,7 @@ h1 {
     text-align: center;
     margin: 10px 0px;
     padding: 5px;
-    border: 1px 1px 10px 1px solid rgb(100, 97, 97);
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
 }
 .padre {
     display: table;
