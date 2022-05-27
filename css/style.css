@@ -79,10 +79,10 @@ p {
 
 /* Proceso de los comandos en img */
 .contenedor__img {
-    margin-right: 10px;
+    margin: 10px;
     max-width: 800px;
 }
 .img__proceso {
     width: 100%;
-    border-radius: 5px;
+    border-radius: 10px;
 }
